@@ -1,0 +1,11 @@
+function arrayDiff(a, b) { 
+  for (let i = 0; i < a.length; i++) {
+    for (let elemB of b) {      
+      if (a[i] === elemB) {
+        a.splice(i, 1);
+        i--;
+      };
+    };
+  };
+  return a;
+};
