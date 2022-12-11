@@ -1,0 +1,8 @@
+function squareSum(numbers){
+  let sum = 0;
+  for(let num of numbers){
+    num *= num;
+    sum += num;
+  }
+  return sum;
+}
